@@ -30,12 +30,17 @@ ecrireEntree() {
   echo -e "mail: ${PRENOM}.${NOM}@iutbeziers.fr\n"
 }
 
+#Check $1
+if [ -z $1 ]; then
+	echo "Enter in first argument the list."
+	exit 1
+fi
+
 #Un uid qui commence a 1050
 i=1050
 
 #pour chaque ligne
 while read -r line; do
-	echo $line
-	((i++))
 	ecrireEntree "$(echo $line | cut -d ' ' -f 2)" "$i" "$(echo $line | cut -d ' ' -f 3 | cut -d ';' -f 1)"
-done < liste_tous.csv
+	((i++))
+done < $1
