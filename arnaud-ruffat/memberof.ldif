@@ -1,5 +1,5 @@
-dn: cn=module{1},cn=config
-cn: module{1}
+dn: cn=module,cn=config
+cn: module
 objectClass: olcModuleList
 olcModuleLoad: memberof
 olcModulePath: /usr/lib/ldap
