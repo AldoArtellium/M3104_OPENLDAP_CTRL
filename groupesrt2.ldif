@@ -1,15 +1,3 @@
-dn: ou=groups,dc=iutbeziers,dc=fr
-objectClass: top
-objectClass: organizationalunit
-ou: groups
-description: Branche Groupes
-
-dn: ou=personnes,dc=iutbeziers,dc=fr
-objectClass: top
-objectClass: organizationalunit
-ou: personnes
-description: Groupes de personnes
-
 dn: ou=etudiants,ou=personnes,dc=iutbeziers,dc=fr
 objectClass: top
 objectClass: organizationalunit

@@ -1,0 +1,9 @@
+dn: ou=people,dc=iutbeziers,dc=fr
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=groups,dc=iutbeziers,dc=fr
+objectClass: organizationalUnit
+ou: Groups
+
+
