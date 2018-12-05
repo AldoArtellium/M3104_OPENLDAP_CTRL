@@ -37,7 +37,7 @@ if [ -z $1 ]; then
 fi
 
 #Un uid qui commence a 1050
-i=1050
+i=1000
 
 #pour chaque ligne
 while read -r line; do
